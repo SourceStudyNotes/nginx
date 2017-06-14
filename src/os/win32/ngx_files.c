@@ -18,8 +18,7 @@ static u_short *ngx_utf8_to_utf16(u_short *utf16, u_char *utf8, size_t *len);
 
 /* FILE_FLAG_BACKUP_SEMANTICS allows to obtain a handle to a directory */
 
-ngx_fd_t
-ngx_open_file(u_char *name, u_long mode, u_long create, u_long access)
+ngx_fd_t ngx_open_file(u_char *name, u_long mode, u_long create, u_long access)
 {
     size_t      len;
     u_short    *u;
@@ -257,8 +256,7 @@ ngx_win32_rename_file(ngx_str_t *from, ngx_str_t *to, ngx_log_t *log)
 }
 
 
-ngx_int_t
-ngx_file_info(u_char *file, ngx_file_info_t *sb)
+ngx_int_t ngx_file_info(u_char *file, ngx_file_info_t *sb)
 {
     size_t                      len;
     long                        rc;
@@ -460,8 +458,7 @@ ngx_read_dir(ngx_dir_t *dir)
 }
 
 
-ngx_int_t
-ngx_close_dir(ngx_dir_t *dir)
+ngx_int_t ngx_close_dir(ngx_dir_t *dir)
 {
     if (FindClose(dir->dir) == 0) {
         return NGX_ERROR;
@@ -595,22 +592,19 @@ ngx_de_info(u_char *name, ngx_dir_t *dir)
 }
 
 
-ngx_int_t
-ngx_de_link_info(u_char *name, ngx_dir_t *dir)
+ngx_int_t ngx_de_link_info(u_char *name, ngx_dir_t *dir)
 {
     return NGX_OK;
 }
 
 
-ngx_int_t
-ngx_read_ahead(ngx_fd_t fd, size_t n)
+ngx_int_t ngx_read_ahead(ngx_fd_t fd, size_t n)
 {
     return ~NGX_FILE_ERROR;
 }
 
 
-ngx_int_t
-ngx_directio_on(ngx_fd_t fd)
+ngx_int_t ngx_directio_on(ngx_fd_t fd)
 {
     return ~NGX_FILE_ERROR;
 }

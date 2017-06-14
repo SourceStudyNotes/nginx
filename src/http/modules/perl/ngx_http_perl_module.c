@@ -632,8 +632,7 @@ fail:
 }
 
 
-static ngx_int_t
-ngx_http_perl_run_requires(pTHX_ ngx_array_t *requires, ngx_log_t *log)
+static ngx_int_t ngx_http_perl_run_requires(pTHX_ ngx_array_t *requires, ngx_log_t *log)
 {
     u_char      *err;
     STRLEN       len;
@@ -666,8 +665,7 @@ ngx_http_perl_run_requires(pTHX_ ngx_array_t *requires, ngx_log_t *log)
 }
 
 
-static ngx_int_t
-ngx_http_perl_call_handler(pTHX_ ngx_http_request_t *r, HV *nginx, SV *sub,
+static ngx_int_t ngx_http_perl_call_handler(pTHX_ ngx_http_request_t *r, HV *nginx, SV *sub,
     SV **args, ngx_str_t *handler, ngx_str_t *rv)
 {
     SV                *sv;

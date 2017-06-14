@@ -1,0 +1,12 @@
+2017/06/13 18:43:35 [emerg] 9650#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2017/06/13 18:43:47 [emerg] 9654#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2017/06/13 18:44:13 [emerg] 9656#0: open() "/Users/wangbin/Documents/git/github/nginx/../conf/nginx.conf" failed (2: No such file or directory)
+2017/06/13 18:44:23 [emerg] 9674#0: open() "/Users/wangbin/Documents/git/github/nginx/../conf/nginx.conf" failed (2: No such file or directory)
+2017/06/13 18:44:33 [emerg] 9685#0: open() "/conf/nginx.conf" failed (2: No such file or directory)
+2017/06/13 18:46:23 [emerg] 9808#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2017/06/13 18:46:33 [emerg] 9811#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2017/06/13 18:47:30 [emerg] 9863#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2017/06/13 18:48:49 [error] 9910#0: *1 "/Users/wangbin/Documents/git/github/nginx/html/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8020"
+2017/06/13 18:48:49 [error] 9910#0: *1 open() "/Users/wangbin/Documents/git/github/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8020", referrer: "http://localhost:8020/"
+2017/06/13 18:48:52 [error] 9910#0: *1 "/Users/wangbin/Documents/git/github/nginx/html/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8020"
+2017/06/13 18:50:14 [error] 9910#0: *5 "/Users/wangbin/Documents/git/github/nginx/html/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8020"
